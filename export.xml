@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<export>
+  <version><![CDATA[4.1.3]]></version>
+  <description><![CDATA[Module Glossaire
+-----
+Affiche en entête de rangée les caractères de l'alphabet de A à Z
+Puis viennent les libellés et leur définition, classés par ordre alphabétique.
+
+Un plug-in est a disposition pour créer une bulle de définition sur un mot depuis le WYSIWYG.
+
+Sans javascript, tous les liens réalisés avec le plug-in pointent vers la page dont le codename est pglossary.
+
+La variable GET utilisée est item. Dans ce cas, l'utilisateur aura un lien de retour au glossaire.
+
+Librairie complémentaire jQuery pour afficher la bulle de définition.
+Si vous utilisez déjà jQuery sur votre site, vous pouvez supprimer le fichier /js/modules/pglossary/jquery-1.6.1.js
+-----
+http://www.automne4you.com]]></description>
+  <modules>
+    <value key="0">
+      <codename><![CDATA[pglossary]]></codename>
+      <polymod>1</polymod>
+      <labels>
+        <en><![CDATA[Glossary]]></en>
+        <fr><![CDATA[Glossaire]]></fr>
+      </labels>
+      <rows>
+        <value key="0">
+          <id>78</id>
+          <uuid><![CDATA[f89ba2ee-67a4-11e0-86b1-002590094442]]></uuid>
+          <label><![CDATA[Glossaire : recherche alphabétique]]></label>
+          <definition><![CDATA[<row>
+	<!--
+	Rangée du module GLOSSAIRE (pglossary).
+	Téléchargez modèle, module et rangée sur
+	http://www.automne4you.com 
+	
+	Affiche en entête de rangée les caractères de l'alphabet de A à Z et de 0 à 9
+	Puis viennent les libellés et leur définition, classés par ordre alphabétique.
+	
+	Sans javascript, tous les liens réalisés avec le plug-in pointe vers la page dont le codename est pglossary.
+	La variable GET utilisée est "item". Dans ce cas, l'utilisateur aura un lien de retour au glossaire.
+	
+	-->
+	<block module="pglossary" id="glossaryByLetter">
+		<div class="pglossary">
+			<script type="text/javascript">
+				var pageURL = '{page:self:url}';
+			</script>
+			<div class="pglossary-form">
+				<atm-if what="{request:string:letter}=='A'">
+					<a href="{page:self:url}?letter=A" class="pglossary-letter">A</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='A'">
+					<a href="{page:self:url}?letter=A">A</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='B'">
+					<a href="{page:self:url}?letter=B" class="pglossary-letter">B</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='B'">
+					<a href="{page:self:url}?letter=B">B</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='C'">
+					<a href="{page:self:url}?letter=C" class="pglossary-letter">C</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='C'">
+					<a href="{page:self:url}?letter=C">C</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='D'">
+					<a href="{page:self:url}?letter=D" class="pglossary-letter">D</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='D'">
+					<a href="{page:self:url}?letter=D">D</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='E'">
+					<a href="{page:self:url}?letter=E" class="pglossary-letter">E</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='E'">
+					<a href="{page:self:url}?letter=E">E</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='F'">
+					<a href="{page:self:url}?letter=F" class="pglossary-letter">F</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='F'">
+					<a href="{page:self:url}?letter=F">F</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='G'">
+					<a href="{page:self:url}?letter=G" class="pglossary-letter">G</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='G'">
+					<a href="{page:self:url}?letter=G">G</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='H'">
+					<a href="{page:self:url}?letter=H" class="pglossary-letter">H</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='H'">
+					<a href="{page:self:url}?letter=H">H</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='I'">
+					<a href="{page:self:url}?letter=I" class="pglossary-letter">I</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='I'">
+					<a href="{page:self:url}?letter=I">I</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='J'">
+					<a href="{page:self:url}?letter=J" class="pglossary-letter">J</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='J'">
+					<a href="{page:self:url}?letter=J">J</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='K'">
+					<a href="{page:self:url}?letter=K" class="pglossary-letter">K</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='K'">
+					<a href="{page:self:url}?letter=K">K</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='L'">
+					<a href="{page:self:url}?letter=L" class="pglossary-letter">L</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='L'">
+					<a href="{page:self:url}?letter=L">L</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='M'">
+					<a href="{page:self:url}?letter=M" class="pglossary-letter">M</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='M'">
+					<a href="{page:self:url}?letter=M">M</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='N'">
+					<a href="{page:self:url}?letter=N" class="pglossary-letter">N</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='N'">
+					<a href="{page:self:url}?letter=N">N</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='O'">
+					<a href="{page:self:url}?letter=O" class="pglossary-letter">O</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='O'">
+					<a href="{page:self:url}?letter=O">O</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='P'">
+					<a href="{page:self:url}?letter=P" class="pglossary-letter">P</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='P'">
+					<a href="{page:self:url}?letter=P">P</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='Q'">
+					<a href="{page:self:url}?letter=Q" class="pglossary-letter">Q</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='Q'">
+					<a href="{page:self:url}?letter=Q">Q</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='R'">
+					<a href="{page:self:url}?letter=R" class="pglossary-letter">R</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='R'">
+					<a href="{page:self:url}?letter=R">R</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='S'">
+					<a href="{page:self:url}?letter=S" class="pglossary-letter">S</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='S'">
+					<a href="{page:self:url}?letter=S">S</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='T'">
+					<a href="{page:self:url}?letter=T" class="pglossary-letter">T</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='T'">
+					<a href="{page:self:url}?letter=T">T</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='U'">
+					<a href="{page:self:url}?letter=U" class="pglossary-letter">U</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='U'">
+					<a href="{page:self:url}?letter=U">U</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='V'">
+					<a href="{page:self:url}?letter=V" class="pglossary-letter">V</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='V'">
+					<a href="{page:self:url}?letter=V">V</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='W'">
+					<a href="{page:self:url}?letter=W" class="pglossary-letter">W</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='W'">
+					<a href="{page:self:url}?letter=W">W</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='X'">
+					<a href="{page:self:url}?letter=X" class="pglossary-letter">X</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='X'">
+					<a href="{page:self:url}?letter=X">X</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='Y'">
+					<a href="{page:self:url}?letter=Y" class="pglossary-letter">Y</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='Y'">
+					<a href="{page:self:url}?letter=Y">Y</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='Z'">
+					<a href="{page:self:url}?letter=Z" class="pglossary-letter">Z</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='Z'">
+					<a href="{page:self:url}?letter=Z">Z</a>
+				</atm-if>
+				<br />#
+				<atm-if what="{request:string:letter}=='0'">
+					<a href="{page:self:url}?letter=0" class="pglossary-letter"> 0</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='0'">
+					<a href="{page:self:url}?letter=0"> 0</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='1'">
+					<a href="{page:self:url}?letter=1" class="pglossary-letter">1</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='1'">
+					<a href="{page:self:url}?letter=1">1</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='2'">
+					<a href="{page:self:url}?letter=2" class="pglossary-letter">2</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='2'">
+					<a href="{page:self:url}?letter=2">2</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='3'">
+					<a href="{page:self:url}?letter=3" class="pglossary-letter">3</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='3'">
+					<a href="{page:self:url}?letter=3">3</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='4'">
+					<a href="{page:self:url}?letter=4" class="pglossary-letter">4</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='4'">
+					<a href="{page:self:url}?letter=4">4</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='5'">
+					<a href="{page:self:url}?letter=5" class="pglossary-letter">5</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='5'">
+					<a href="{page:self:url}?letter=5">5</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='6'">
+					<a href="{page:self:url}?letter=6" class="pglossary-letter">6</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='6'">
+					<a href="{page:self:url}?letter=6">6</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='7'">
+					<a href="{page:self:url}?letter=7" class="pglossary-letter">7</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='7'">
+					<a href="{page:self:url}?letter=7">7</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='8'">
+					<a href="{page:self:url}?letter=8" class="pglossary-letter">8</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='8'">
+					<a href="{page:self:url}?letter=8">8</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}=='9'">
+					<a href="{page:self:url}?letter=9" class="pglossary-letter">9</a>
+				</atm-if>
+				<atm-if what="{request:string:letter}!='9'">
+					<a href="{page:self:url}?letter=9">9</a>
+				</atm-if>
+				
+				<img class="pglossary-loading hide" src="img/demo/common/loading.gif" alt="Chargement ..." />
+			</div>
+			<atm-xml what="{request:string:out} == 'xml'">
+				<atm-search what="{Definitions}" name="glossaryResult">
+				<atm-if what="{request:int:item}">
+					<atm-search-param search="glossaryResult" type="item" value="{request:int:item}" mandatory="true" />
+				</atm-if>
+				<atm-search-param search="glossaryResult" type="{Definitions:Libelle:fieldID}" value="{request:string:letter}%" operator="like" mandatory="false" />
+				<atm-search-limit search="glossaryResult" value="50" />
+				<atm-search-page search="glossaryResult" value="{request:int:page}" />
+				<atm-search-order search="glossaryResult" type="{Definitions:Libelle:fieldID}" direction="asc" />
+				<atm-result search="glossaryResult">
+				<atm-if what="{firstresult}">
+					<atm-start-tag tag="div" class="pglossary-results" />
+				</atm-if>
+				<div class="pglossary-result">
+					<h2>{Definitions:Libelle:label}</h2>
+					<div>{Definitions:Definition:htmlvalue}</div>
+				</div>
+				
+				<atm-if what="{maxresults}>50 &amp;&amp; {lastresult} &amp;&amp; !{request:int:item}">
+				<div class="pglossary-pages">
+					<atm-function function="pages" maxpages="{maxpages}" currentpage="{currentpage}" displayedpage="5">
+						<pages><a href="{page:self:url}?letter={request:string:letter}&amp;page={n}">{n}</a> </pages>
+						<currentpage><span class="pglossary-current">{n}</span></currentpage>
+						<previous><a href="{page:self:url}?letter={request:string:letter}&amp;page={n}" class="pglossary-previous">Page précédente</a> </previous>
+						<next><a href="{page:self:url}?letter={request:string:letter}&amp;page={n}" class="pglossary-next">Page suivante</a> </next>
+					</atm-function> 
+					</div>
+				</atm-if>
+
+
+				<atm-if what="{lastresult}">
+					<atm-end-tag tag="div" />
+				</atm-if>
+				<atm-if what="{request:int:item}">
+					<a href="{page:self:url}">Consulter le glossaire</a>
+				</atm-if>	
+				</atm-result>
+					<atm-noresult search="glossaryResult"><div class="pglossary-noresult">Aucune définition pour le moment ...</div></atm-noresult>
+				</atm-search>
+				</atm-xml>
+				</div>
+			</block>
+			</row>]]></definition>
+          <module><![CDATA[pglossary]]></module>
+          <groups/>
+          <useable>1</useable>
+          <description><![CDATA[Rangée affichant tous les libellés et leur définition d'après le premier caractère de celui-là.
+---
+Téléchargez modèle, module et rangée sur http://www.automne4you.com ]]></description>
+          <image><![CDATA[/automne/templates/rows/images/nopicto.gif]]></image>
+        </value>
+      </rows>
+      <js>
+        <value key="0"><![CDATA[/js/modules/pglossary/jquery-1.6.1.js]]></value>
+        <value key="1"><![CDATA[/js/modules/pglossary/pglossary.js]]></value>
+      </js>
+      <css>
+        <value key="0"><![CDATA[/css/modules/pglossary.css]]></value>
+      </css>
+      <objects>
+        <value key="0">
+          <id>5</id>
+          <uuid><![CDATA[f4751f0c-6799-11e0-86b1-002590094442]]></uuid>
+          <labels>
+            <en><![CDATA[Definition]]></en>
+            <fr><![CDATA[Définitions]]></fr>
+          </labels>
+          <descriptions>
+            <en><![CDATA[Set of words and their definitions
+---
+Download template, module and row on http://www.automne4you.com ]]></en>
+            <fr><![CDATA[Ensemble des mots et de leur définition.
+---
+Téléchargez modèle, module et rangée sur http://www.automne4you.com]]></fr>
+          </descriptions>
+          <params>
+            <resourceUsage>1</resourceUsage>
+            <admineditable>0</admineditable>
+            <composedLabel/>
+            <previewURL/>
+            <indexable>0</indexable>
+            <indexURL/>
+            <resultsDefinition/>
+          </params>
+          <fields>
+            <value key="0">
+              <id>20</id>
+              <uuid><![CDATA[157a6a36-679a-11e0-86b1-002590094442]]></uuid>
+              <labels>
+                <en><![CDATA[Label]]></en>
+                <fr><![CDATA[Libellé]]></fr>
+              </labels>
+              <descriptions/>
+              <objectID>5</objectID>
+              <type><![CDATA[CMS_object_string]]></type>
+              <multi>0</multi>
+              <params>
+                <order>1</order>
+                <required>1</required>
+                <indexable>0</indexable>
+                <searchlist>0</searchlist>
+                <searchable>1</searchable>
+                <params>
+                  <maxLength>255</maxLength>
+                  <isEmail>0</isEmail>
+                  <matchExp/>
+                </params>
+              </params>
+            </value>
+            <value key="1">
+              <id>21</id>
+              <uuid><![CDATA[2639fdaa-679a-11e0-86b1-002590094442]]></uuid>
+              <labels>
+                <en><![CDATA[Definition]]></en>
+                <fr><![CDATA[Définition]]></fr>
+              </labels>
+              <descriptions>
+                <en><![CDATA[CAUTION: 
+Do not use this plugin in the module itself]]></en>
+                <fr><![CDATA[ATTENTION : 
+Ne faite pas appel à ce plug-in dans le module lui-même]]></fr>
+              </descriptions>
+              <objectID>5</objectID>
+              <type><![CDATA[CMS_object_text]]></type>
+              <multi>0</multi>
+              <params>
+                <order>2</order>
+                <required>1</required>
+                <indexable>0</indexable>
+                <searchlist>1</searchlist>
+                <searchable>1</searchable>
+                <params>
+                  <html>0</html>
+                  <toolbar><![CDATA[BasicLink]]></toolbar>
+                  <toolbarWidth><![CDATA[100%]]></toolbarWidth>
+                  <toolbarHeight>200</toolbarHeight>
+                </params>
+              </params>
+            </value>
+          </fields>
+          <plugins>
+            <value key="0">
+              <id>3</id>
+              <uuid><![CDATA[2b90424e-679c-11e0-86b1-002590094442]]></uuid>
+              <labels>
+                <en><![CDATA[View a definition]]></en>
+                <fr><![CDATA[Afficher une définition]]></fr>
+              </labels>
+              <descriptions>
+                <en><![CDATA[Displays the definition in a tooltip when mousing visible.]]></en>
+                <fr><![CDATA[Permet d'afficher la définition dans une bulle d'aide visible au survol. ]]></fr>
+              </descriptions>
+              <objectID>5</objectID>
+              <params>
+                <query/>
+                <definition><![CDATA[<atm-plugin language="fr">
+    <atm-plugin-valid>
+	<atm-if what="!{page:pglossary:exists}"><a name="pglossary-item{Definitions:id}" class="pglossary-link" title="{Definitions:Definition:value}">{plugin:selection}</a></atm-if>
+	<atm-if what="{page:pglossary:exists}">
+<a href="{page:pglossary:url}?item={Definitions:id}" class="pglossary-link" title="{Definitions:Definition:value}">{plugin:selection}</a></atm-if>
+    </atm-plugin-valid>
+	<atm-plugin-invalid>
+        {plugin:selection}
+    </atm-plugin-invalid>
+</atm-plugin>]]></definition>
+              </params>
+            </value>
+          </plugins>
+        </value>
+      </objects>
+      <files>
+        <value key="0"><![CDATA[/automne/templates/rows/images/nopicto.gif]]></value>
+        <value key="1"><![CDATA[/js/modules/pglossary/jquery-1.6.1.js]]></value>
+        <value key="2"><![CDATA[/js/modules/pglossary/pglossary.js]]></value>
+        <value key="3"><![CDATA[/css/modules/pglossary.css]]></value>
+      </files>
+    </value>
+  </modules>
+</export>

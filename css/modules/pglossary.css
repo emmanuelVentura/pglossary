@@ -1,0 +1,70 @@
+/*
+ Feuille de style du module GLOSSAIRE (pglossary).
+ Téléchargez modèle, module et rangée sur
+ http://www.automne4you.com 
+ 
+ .pglossary				:	Bloc contenant l'affichage du module.
+ .pglossary-form			:	Bloc contenant les éléments de recherche.
+ .pglossary-letter			:	Class permettant d'identifier la lettre de la recherche encours.
+ .pglossary-loading			:	animation de chargement ajax.
+ .pglossary-results			:	Bloc contenant tous les résultats affichés.
+ .pglossary-result			:	Bloc par résultat.
+ .pglossary-noresult			:	Bloc contenant contenant le message d'absence de résultat.
+ .pglossary-pages			:	Bloc contenant la pagination
+ .pglossary-current			:	Page actuelle de la pagination
+ .pglossary-previous			:	Lien 'Précédent' de la pagination
+ .pglossary-next			:	Lien 'Suivant' de la pagination
+ .pglossary-link			:	Class présente sur les liens réalisés à l'aide du plug-in.
+ .pglossary-tooltip			:	Bulle d'aide.
+
+*/
+
+.pglossary{
+	margin:					2em 0;
+}
+.pglossary-form{
+	margin:					0 0 1em 0;
+}
+.pglossary-letter{
+	background-color:			#444;
+	color:					#FFF;
+	font-weight:				bold;
+	text-decoration:			none;
+}
+.pglossary-results{}
+.pglossary-result{
+	margin:					2em 0;
+}
+.pglossary-noresult{}
+.pglossary-pages{
+	padding-top:				0.5em;
+	border-top:				1px solid #777;
+	text-align:				center;
+}
+.pglossary-current{
+	font-weight:				bold;
+}
+.pglossary-previous{}
+.pglossary-next{}
+.pglossary-link{
+	cursor:					help;
+	text-decoration:			underline;
+}
+.pglossary-link:hover{
+	text-decoration:			none;
+}
+.pglossary-tooltip{
+	background:				transparent url('/js/modules/pglossary/pglossary-arrow.gif') no-repeat center bottom;
+	color:					#FFF;
+	font-size:				9px;
+	line-height:				1.3em;
+	max-width:				25em;
+	position:				absolute;
+	z-index:				999;
+}
+.pglossary-tooltip p{
+	background-color:			#000;
+	margin:					5px;
+	padding:				0.7em;
+}
+.pglossary-loading{}
